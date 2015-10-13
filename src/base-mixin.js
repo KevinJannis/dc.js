@@ -487,7 +487,8 @@ dc.baseMixin = function (_chart) {
         if (_svg) {
             _svg
                 .attr('width', _chart.width())
-                .attr('height', _chart.height());
+                .attr('height', _chart.height())
+                .attr('viewBox', '0 0 ' + _chart.width() + ' ' + _chart.height());
         }
     }
 
